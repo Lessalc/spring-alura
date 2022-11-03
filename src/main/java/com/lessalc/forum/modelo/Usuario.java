@@ -66,6 +66,14 @@ public class Usuario implements UserDetails {
 		this.senha = senha;
 	}
 
+	public void setPerfis(List<Perfil> perfis) {
+		this.perfis = perfis;
+	}
+
+	public List<Perfil> getPerfis() {
+		return perfis;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
